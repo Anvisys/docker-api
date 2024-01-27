@@ -2,10 +2,15 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'dev', credentialsId: 'githubCred', url: 'https://github.com/Anvisys/docker-api.git'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat "\"${tool '.Net 6'}\\msbuild\" docker-api.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+                sh "\"${tool 'NET-6.0'}/dotnet\" build ./docker-api/docker-api.csproj /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
                 echo 'Buil succedded'
             }
         }
