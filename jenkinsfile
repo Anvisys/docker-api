@@ -14,9 +14,11 @@ pipeline {
                 echo 'Buil succedded'
             }
         }
-        stage('Test') {
+        stage('Build Library') {
             steps {
-                echo 'Testing..'
+                echo 'Building..'
+                sh "\"${tool 'NET-6.0'}/dotnet\" build ./Common/Common.csproj /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+                echo 'Buil succedded'
             }
         }
         stage('Deploy') {
