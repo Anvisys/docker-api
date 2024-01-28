@@ -4,3 +4,12 @@
 
 /.vs/docker-api/FileContentIndex
 /.vs/docker-api/v17
+/.vs
+/docker-api/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+/docker-api/obj/Debug/net6.0/docker-api.assets.cache
+/docker-api/obj/Debug/net6.0/docker-api.GeneratedMSBuildEditorConfig.editorconfig
+/docker-api/obj/docker-api.csproj.nuget.dgspec.json
+/docker-api/obj/project.assets.json
+/docker-api/obj/project.nuget.cache
+/Common/obj
+/TestLibrary/obj/Debug/net6.0

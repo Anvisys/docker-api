@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docker-api", "docker-api\docker-api.csproj", "{0DF0BDDE-1C87-4B5D-8A74-2230961E6A32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docker-api", "docker-api\docker-api.csproj", "{0DF0BDDE-1C87-4B5D-8A74-2230961E6A32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ED10EBFC-1534-4B40-B5B4-0700218387C0}"
+	ProjectSection(SolutionItems) = preProject
+		jenkinsfile = jenkinsfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibrary", "TestLibrary\TestLibrary.csproj", "{58B9EAE6-47CE-4DAD-804D-0AC0875304FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{1653EF99-9CBA-4FAA-A78C-C6220DC8962E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +24,14 @@ Global
 		{0DF0BDDE-1C87-4B5D-8A74-2230961E6A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DF0BDDE-1C87-4B5D-8A74-2230961E6A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DF0BDDE-1C87-4B5D-8A74-2230961E6A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58B9EAE6-47CE-4DAD-804D-0AC0875304FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58B9EAE6-47CE-4DAD-804D-0AC0875304FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58B9EAE6-47CE-4DAD-804D-0AC0875304FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58B9EAE6-47CE-4DAD-804D-0AC0875304FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1653EF99-9CBA-4FAA-A78C-C6220DC8962E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1653EF99-9CBA-4FAA-A78C-C6220DC8962E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1653EF99-9CBA-4FAA-A78C-C6220DC8962E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1653EF99-9CBA-4FAA-A78C-C6220DC8962E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
