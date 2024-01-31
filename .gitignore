@@ -13,3 +13,17 @@
 /docker-api/obj/project.nuget.cache
 /Common/obj
 /TestLibrary/obj/Debug/net6.0
+/docker-api/bin/Debug/net6.0/docker-api.dll
+/Common/bin/Debug/net6.0
+/TestLibrary/bin/Debug/net6.0
+/TestLibrary/obj
+/docker-api/bin/Debug/net6.0/docker-api.exe
+/docker-api/bin/Debug/net6.0/docker-api.pdb
+/docker-api/obj/Debug/net6.0/ref/docker-api.dll
+/docker-api/obj/Debug/net6.0/refint/docker-api.dll
+/docker-api/obj/Debug/net6.0/apphost.exe
+/docker-api/obj/Debug/net6.0/docker-api.dll
+/docker-api/obj/Debug/net6.0/docker-api.csproj.FileListAbsolute.txt
+/docker-api/obj/Debug/net6.0/docker-api.csproj.CoreCompileInputs.cache
+/docker-api/obj/Debug/net6.0/docker-api.genruntimeconfig.cache
+/docker-api/obj/Debug/net6.0/docker-api.pdb

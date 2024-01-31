@@ -10,7 +10,8 @@ COPY ["docker-api/docker-api.csproj", "docker-api/"]
 RUN dotnet restore "docker-api/docker-api.csproj"
 
 WORKDIR "/src/docker-api"
-COPY . .
+#COPY . .
+COPY docker-api/. ./src/docker-api/
 RUN dotnet build "docker-api.csproj" -c Release -o /app/build
 
 FROM build AS publish
