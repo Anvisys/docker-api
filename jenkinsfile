@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'dev', credentialsId: 'githubCred', url: 'https://github.com/Anvisys/docker-api.git'
+                git branch: 'dev', credentialsId: 'GitHub-cred', url: 'https://github.com/Anvisys/docker-api.git'
             }
         }
         stage('Build') {
@@ -21,10 +21,25 @@ pipeline {
                 echo 'Buil succedded'
             }
         }
+        stage('check Docker') {
+            steps {
+                echo 'checking Docker....'
+                sh """ docker ps -a"""
+                //sh "\"${tool 'MyDocker'}/bin\" docker ps -a"
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-            }
+                 script {
+                    withDockerRegistry(credentialsId: 'DockerHub-cred', url: 'https://index.docker.io/') {
+                       sh """ docker build -t amitbansal73/docker-api:demo3 . """
+		               sh """ docker push amitbansal73/docker-api:demo3 """
+
+                    }
+                 }
+                }
         }
+
     }
 }
