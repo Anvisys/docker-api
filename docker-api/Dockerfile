@@ -13,6 +13,7 @@ RUN dotnet restore "docker-api/docker-api.csproj"
 WORKDIR "/src/docker-api"
 #COPY . .
 COPY docker-api/. ./src/docker-api/
+COPY Common/. ./src/Common/
 RUN dotnet build "docker-api.csproj" -c Release -o /app/build
 
 FROM build AS publish
